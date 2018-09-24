@@ -4,7 +4,7 @@
   "description": "a wallet counter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "react-scripts test",
     "start": "webpack-dev-server --mode development"
   },
   "author": "ritika",
@@ -26,10 +26,13 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
+    "react-scripts": "^1.1.5",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"
   }

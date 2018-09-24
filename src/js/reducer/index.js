@@ -9,39 +9,24 @@ const asyncReducer = (state= initialState, action)=>{
 		case "FETCH_BALANCE": 
 			return Object.assign({}, state, {
 				isFetching: true,
-				balance: 0,
-				isError: false
+				balance: 0
 			})
 		case "REC_BALANCE": 
 		
 			return Object.assign({}, state, {
-				isFetching: false,
-				balance: action.data.balance,
-				isError: false
+				balance: action.data.balance
 			})
 
 		case "ADD_BALANCE" :
-		    console.log(state) 
 			return Object.assign({}, state, {
-				isFetching: false,
-				balance: state.balance + 1,
-				isError: false
+				balance: action.balance.data + 1
 			})
 
 		case "REDUCE_BALANCE" :
-		    console.log(state) ;
-		    let newState = {};
 
-		    if(state.balance > 0) {
-		    	newState = Object.assign({}, state, {
-				isFetching: false,
-				balance: state.balance - 1,
-				isError: false
-				})
-		    } else {
-		    	newState = state
-		    }
-			return newState
+			return Object.assign({}, state, {
+				balance: action.balance.data - 1
+			})
 
 		default :
 			return state

@@ -6,20 +6,22 @@ export const fetch_post =()=>({
 
 export const receive_post = (post)=>{
 	return {
-	type: "REC_BALANCE",
-	data: post 
+		type: "REC_BALANCE",
+		data: post 
 }}
 
 export const receive_error = ()=>({
 	type: "Err" 
 })
 
-export const add_balance = ()=> ({
-	type: "ADD_BALANCE"
+export const add_balance = (data)=> ({
+	type: "ADD_BALANCE",
+	balance: data	
 })
 
-export const reduce_balance = ()=> ({
-	type: "REDUCE_BALANCE"
+export const reduce_balance = (data)=> ({
+	type: "REDUCE_BALANCE",
+	balance: data
 })
 
 export const thunk_action_creator = (user)=>{
