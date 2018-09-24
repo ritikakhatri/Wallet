@@ -6,7 +6,8 @@ body{
 .balance{
 	display: inline-block;
 	text-align: center;
-	font-size: x-large;
+	font-size: 2em;
+    vertical-align: middle;
 }
 
 .parent {

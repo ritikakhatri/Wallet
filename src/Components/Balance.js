@@ -4,7 +4,8 @@ import {connect} from 'react-redux'
 class Balance extends Component {
 	render() {
 		return (
-			<div className="balance">{`£${this.props.balance}`}</div>
+			<div className="balance">{this.props.balance >= 0? `£${this.props.balance}`
+			 :this.props.balance}</div>
 		)
 	}
 }
