@@ -1,0 +1,32 @@
+
+body{
+	background-color: #C0C0C0;
+}
+
+.balance{
+	display: inline-block;
+	text-align: center;
+	font-size: x-large;
+}
+
+.parent {
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100px;
+}
+
+.add {
+	margin-left: 36px;
+    margin-right: 30px;
+    font-size: xx-large;
+    width:10%;
+}
+.reduce {
+	padding-left: 10px;
+	font-size: xx-large;
+	width:10%;
+}
