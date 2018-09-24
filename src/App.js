@@ -7,7 +7,7 @@ import Balance from './Components/Balance';
 import Warning from './Components/Warning';
 
 import './App.css';
-import { Button, Grid, Row, Col} from 'react-bootstrap';
+import { Button, Grid, Row, Col, Panel} from 'react-bootstrap';
 
 class App extends Component {
      constructor(props) {
@@ -34,6 +34,9 @@ class App extends Component {
      return (
       <Grid className="parent">
       	<Row className="show-grid">
+               <Col xs={12} align="center">
+                    <Panel.Heading>Greetings! Your current balance is:</Panel.Heading>
+               </Col>
                <Col xs={12} align="center">
                          <Warning />
                </Col>

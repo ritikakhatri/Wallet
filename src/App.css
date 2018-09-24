@@ -31,3 +31,13 @@ body{
 	font-size: xx-large;
 	width:10%;
 }
+.panel-heading {
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 480px) {
+    .add,
+    .reduce {
+        width: 15%;
+    }
+}
