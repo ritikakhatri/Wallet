@@ -28,6 +28,7 @@ To test use the command
     npm test
     
  Production ready react - This will minify js and assets and get a single file for production dist/bundle.js
+ It is in prod branch
       
       npm run build
 
